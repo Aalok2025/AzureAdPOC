@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<p>Please log in with your Azure AD account.</p>
+
+<form asp-action="LoginWithAD" method="post">
+    <button type="submit">Login with AD</button>
+</form>
+
+<p>Or log in with a custom account:</p>
+
+<form asp-action="CustomLogin" method="post">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button type="submit">Custom Login</button>
+</form>
